@@ -1,2 +1,2 @@
 # minimalistic_burgermenu
-Nothing special, just tried something minimalistic
+Nothing special, just tried something minimalistic for mobile devices.
