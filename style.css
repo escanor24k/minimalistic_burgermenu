@@ -30,11 +30,13 @@ body{
     top:0;
     visibility: visible;
     opacity: 1;
-    transition: all 0.4s;
+    transition: ease-in-out 400ms;
 }
+
 .hidden{
     visibility: hidden;
     opacity: 0;
+    transition: ease-in-out 200ms;
 }
 #menuBar{ 
     display:flex;
