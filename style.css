@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.menu{
+    font-size: 2.5em;rem;
+    position: relative;
+    top:20px;
+    left:20px;
+    border:none;
+    background:none;
+    transition: 0.3s;
+    z-index:2;
+    color:rgb(219, 219, 219);
+}
+.menu:hover{
+    transition: 0.3s;
+    color:blue;
+}
+.popNav{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    position: absolute;
+    left:0;
+    top:0;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px){
+    #menuBar{ 
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #menuBar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style:none;
+        text-decoration: none;
+        font-size: 3rem;
+        width:90%;
+        gap:20px;
+    }
+    #menuBar li{
+        background-color: rgba(53, 53, 53,0.05);
+        padding:5px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #menuBar li a{
+        color:white;
+        background-color: rgba(53, 53, 53,0.05);
+        text-decoration: none;
+        transition: all 0.4s;
+        opacity: 1;
+    }
+    #menuBar li a:hover{
+        transition: all 0.4s;
+        opacity: 0.7;
+    }
+}
